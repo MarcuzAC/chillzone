@@ -10,13 +10,13 @@ export const defaultStyles = StyleSheet.create({
     inputField:{
         height:44,
         borderWidth: 1,
-        borderBlockColor: '#ABABAB',
+        borderColor: '#ABABAB',
         borderRadius: 8,
         padding:10,
-        backgroundColor: '#ffff'
+        backgroundColor: '#fff'
     },
     btn: {
-        borderColor: Colors.primary,
+        backgroundColor: Colors.primary,
         height: 58,
         borderRadius:8,
         justifyContent:'center',
