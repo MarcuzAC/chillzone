@@ -6,6 +6,7 @@ import Colors from '@/constants/Colors'
 import { Ionicons } from '@expo/vector-icons'
 import { useOAuth } from '@clerk/clerk-expo'
 import { useRouter } from 'expo-router'
+import { useNavigation } from '@react-navigation/native';
 
 enum strategy {
   Google = 'oauth_google',
@@ -16,6 +17,8 @@ enum strategy {
 const Page = () => {
   useWarmUpBrowser();
   const router = useRouter();
+  const navigation = useNavigation();
+  
 
   const { startOAuthFlow: appleAuth } = useOAuth({ strategy: 'oauth_apple' })
   const { startOAuthFlow: googleAuth } = useOAuth({ strategy: 'oauth_google' })
@@ -34,6 +37,7 @@ const Page = () => {
       if (createdSessionId) {
         setActive!({ session: createdSessionId })
         router.back()
+        
       }
 
     } catch (error) {
