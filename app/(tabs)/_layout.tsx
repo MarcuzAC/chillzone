@@ -20,15 +20,10 @@ const Layout = () => {
       tabBarIcon: ({color, size})=>
       <Ionicons name='search' color={color} size ={size}/>
     }}/>
-     <Tabs.Screen name='wishlist' options={{
-      tabBarLabel:'Wishlist',
+     <Tabs.Screen name='playlist' options={{
+      tabBarLabel:'Playlist',
       tabBarIcon: ({color, size})=>
-      <Ionicons name='clipboard' color={color} size ={size}/>
-    }}/>
-    <Tabs.Screen name='trips' options={{
-      tabBarLabel: 'Trips',
-      tabBarIcon: ({color, size})=>
-      <Ionicons name='airplane' color={color} size={size}/>
+      <FontAwesome5 name='list' color={color} size={size} />
     }}/>
     <Tabs.Screen name='inbox' options={{
       tabBarLabel:'Inbox',

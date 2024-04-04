@@ -18,10 +18,6 @@ const categories = [
         icon: 'people-outline'
     },
     {
-        name: 'Shop',
-        icon: 'cart-outline'
-    },
-    {
         name: 'Music',
         icon: 'musical-notes-outline'
     }
